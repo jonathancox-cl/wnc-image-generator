@@ -1,1 +1,7 @@
 
+services:
+  - type: web
+      name: wnc-image-generator
+          env: python
+              buildCommand: bash build.sh
+                  startCommand: gunicorn app:app
